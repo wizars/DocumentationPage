@@ -3,8 +3,6 @@
   --azul: #c3d3ff;
 }
 * {
-  /* margin: 0; */
-  /* padding: 0; */
   box-sizing: border-box;
   font-family: 'Open Sans', Arial, sans-serif;
   color: var(--gris);
@@ -29,7 +27,6 @@ a:visited {
     list-style: none;
   border-top: 1px solid var(--gris);
   padding: 10px 30px;
-  /* height: 44px; */
   line-height: 1.8em;
   margin: 0;
 }
