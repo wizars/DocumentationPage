@@ -1,0 +1,104 @@
+:root {
+  --gris: #4d4e53;
+  --azul: #c3d3ff;
+}
+* {
+  /* margin: 0; */
+  /* padding: 0; */
+  box-sizing: border-box;
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: var(--gris);
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+#navbar {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    height: 100%;
+    min-width: 300px;
+    border-right: 2px solid var(--gris);
+}
+
+#navbar li {
+    list-style: none;
+  border-top: 1px solid var(--gris);
+  padding: 10px 30px;
+  /* height: 44px; */
+  line-height: 1.8em;
+  margin: 0;
+}
+#navbar ul{
+    padding-left: 0;
+}
+#navbar header {
+  font-size: 1.8em;
+  margin: 15px;
+  color: black;
+  text-align: center;
+  vertical-align: middle;
+  background-color:  var(--azul);
+  border-radius: 5px;
+}
+#main-doc {
+  margin: 0 0 0 320px;
+}
+
+@media screen and (max-width: 700px) {
+  #navbar {
+    background-color: rgb(142, 199, 166);
+    height: auto;
+    width: 100%;
+    position: static;
+    max-height: 250px;
+    border: none;
+  }
+
+  #navbar ul {
+    border: 2px solid var(--gris);
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  #navbar li:first-of-type {
+    border-top: 0;
+  }
+  #main-doc {
+    margin-top: 20px;
+  }
+}
+
+
+
+/*      CUERPO PRINCIPAL     */
+section header {
+  font-size: 1.8em;
+  color: black;
+  margin: 10px 0;
+}
+article{
+    font-size:     0.96em;
+    line-height: 1.5;
+}
+li{
+    /* margin-left: 2em; */
+margin: 15px 0 0 2em;
+}
+p{
+    margin: 1em 0;
+}
+code{
+    display: block;
+    line-height: 2;
+    background-color:var(--azul);
+    border-radius: 5px;
+    padding: 0.8em;
+    white-space: pre-line;
+    font-family: monospace;
+    margin: 0.5em;
+}
